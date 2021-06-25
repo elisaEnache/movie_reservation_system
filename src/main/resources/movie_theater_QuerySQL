@@ -1,0 +1,38 @@
+CREATE DATABASE movie_theater;
+USE movie_theater;
+SHOW TABLES;
+
+CREATE TABLE users(
+id INT(6) PRIMARY KEY AUTO_INCREMENT,
+name VARCHAR(50) NOT NULL,
+email VARCHAR(50) NOT NULL,
+password VARCHAR(50) NOT NULL
+);
+
+CREATE TABLE movies(
+id INT (20) PRIMARY KEY AUTO_INCREMENT,
+name VARCHAR (50)
+);
+
+
+CREATE TABLE projection_rooms(
+id INT(6) PRIMARY KEY AUTO_INCREMENT,
+Name VARCHAR(20) NOT NULL,
+Seats INTEGER(10) NOT NULL
+);
+ALTER TABLE projection_rooms
+ADD Availability ENUM ('Y', 'N') DEFAULT 'Y';
+
+  CREATE TABLE booking(
+  id INT PRIMARY KEY AUTO_INCREMENT,
+  screening_id INT(6),
+  customer_id INT(6),
+ FOREIGN KEY(screening_id) REFERENCES projection_rooms(id),
+FOREIGN KEY(customer_id)  REFERENCES users(id)
+  );
+
+
+SELECT * FROM users;
+SELECT * FROM movies;
+SELECT * FROM projection_rooms;
+SELECT * FROM booking;

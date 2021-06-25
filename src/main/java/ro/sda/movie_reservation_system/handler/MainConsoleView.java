@@ -2,11 +2,11 @@ package ro.sda.movie_reservation_system.handler;
 
 
 import com.mysql.cj.xdevapi.SessionFactory;
-import ro.sda.java21.persistance.entities.Booking;
-import ro.sda.java21.persistance.entities.Movies;
-import ro.sda.java21.persistance.entities.ProjectionRooms;
-import ro.sda.java21.persistance.entities.User;
-import ro.sda.java21.persistance.servicies.Repository;
+import ro.sda.movie_reservation_system.entities.Booking;
+import ro.sda.movie_reservation_system.entities.Movies;
+import ro.sda.movie_reservation_system.entities.ProjectionRooms;
+import ro.sda.movie_reservation_system.entities.User;
+import ro.sda.movie_reservation_system.services.Repository;
 
 import java.util.HashMap;
 import java.util.Map;
