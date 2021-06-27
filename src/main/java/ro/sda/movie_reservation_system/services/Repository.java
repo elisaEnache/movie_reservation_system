@@ -69,7 +69,6 @@ public class Repository implements Dao<GenericEntity> {
         return foundEntity.get(0);
     }
     //TODO --  UPDATE --
-
     public void update(User user, User u) {
         user.setName(Objects.requireNonNull(u.getName(), "Name cannot be null"));
         user.setEmail(Objects.requireNonNull(u.getEmail(), "Email cannot be null"));

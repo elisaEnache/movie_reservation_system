@@ -28,7 +28,7 @@ public class MainConsoleView {
             System.out.println("======================================");
             System.out.println("Please choose an option");
             viewHandler.printMenu(MenuTypeEnum.MAIN_MENU);
-            option = keyboardHandler.readInt("Please choose an option");
+            option = keyboardHandler.readInt(" option");
 
             switch (option) {
                 case 1:

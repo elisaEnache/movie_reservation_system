@@ -15,6 +15,7 @@ public class ViewHandler {
         myMenus.get(MenuTypeEnum.MAIN_MENU).add("2. CREATE ACCOUNT");
         myMenus.get(MenuTypeEnum.MAIN_MENU).add("3. CLOSE APP");
 
+
         myMenus.put(MenuTypeEnum.DASHBOARD_MENU, new ArrayList<>());
         myMenus.get(MenuTypeEnum.DASHBOARD_MENU).add("1. SEE ALL USER OPTIONS");
         myMenus.get(MenuTypeEnum.DASHBOARD_MENU).add("2. SEE ALL MOVIE OPTIONS");
